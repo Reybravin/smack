@@ -12,6 +12,7 @@ class ChannelVC: UIViewController {
 
     //Outlets
     @IBOutlet weak var loginBtn: UIButton! //to change the title of the button to the user's name
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
