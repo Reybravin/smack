@@ -52,8 +52,8 @@ class AuthService {
         ]
         
         let body: [String: Any] = [
-            "email" = lowerCaseEmail,
-            "password" = password
+            "email": lowerCaseEmail,
+            "password": password
         ]
         
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
